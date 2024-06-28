@@ -5,6 +5,10 @@ int main() {
     map<string, function<void()>> commands;
 
     commands["ping"] = pingPong;
+    commands["calculator.qdr"] = calculator;
+    commands["calculator"] = calculator;
+    commands["readfile"] = readFile;
+    commands["writefile"] = writeFile;
     
     cout << "Welcome to IsOS Quadrion!" << endl;
 
