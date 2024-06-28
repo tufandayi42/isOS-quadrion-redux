@@ -103,4 +103,20 @@ void writeFile() {
     fileWrite.close();
 }
 
-#endif
+void notepad() {
+    int secim;    
+    cout << "Do you want to write text to the file or read text from the file? "
+         << "1. Write File 2. Read File ";
+    cin >> secim; 
+    switch (secim) {
+        case 1:
+            writeFile();
+            break;
+        case 2:
+            readFile();
+            break;
+        default:
+            cout << "Invalid choice." << endl;
+            break;
+    }
+}
