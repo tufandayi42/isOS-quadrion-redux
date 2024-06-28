@@ -12,6 +12,8 @@
 #include <chrono>
 #include <cstdlib>
 #include <unistd.h>
+#include <algorithm>
+#include <cctype>
 
 using namespace std;
 
@@ -19,11 +21,8 @@ void wait(int seconds) {
     this_thread::sleep_for(chrono::seconds(seconds));
 }
 
-void testCommand1() {
-    cout << "i hate niggers so fucking much" << endl;
+void pingPong() {
+    cout << "Pong!" << endl;
 }
-
-
-
 
 #endif
